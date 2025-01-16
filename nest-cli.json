@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true
+  },
+  "projects": {
+    "solr": {
+      "type": "library",
+      "root": "libs/solr",
+      "entryFile": "index",
+      "sourceRoot": "libs/solr/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/solr/tsconfig.lib.json"
+      }
+    }
+  }
+}
